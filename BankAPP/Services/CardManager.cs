@@ -14,7 +14,7 @@ namespace BankAPP.Services
                     card.Blocked = true;
                     break;
                 }
-            }
+            }gvadgasga
         }
 
         public Card CreateCard(User user)
