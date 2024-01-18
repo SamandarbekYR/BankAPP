@@ -1,10 +1,18 @@
 ﻿namespace BankAPP.Models
 {
-    public class Bank : BaseModel
+    public class Bank(string name, string address, string phone, List<User> users) : BaseModel
     {
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string Phone {  get; set; }
-        public List<User> Users { get; set; }
+        public string Name = name;
+        public string Address = address;
+        public string Phone = phone;
+        public List<User> Users = users;
+
+        public void GetInfo()
+        {
+            Console.WriteLine(Name);
+            Console.WriteLine(Address);
+            Console.WriteLine(Phone);
+            Console.WriteLine(Users.Count);
+        }
     }
 }
